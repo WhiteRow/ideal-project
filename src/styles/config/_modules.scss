@@ -1,0 +1,15 @@
+@mixin c_transition ($property) {
+    transition: $property
+}
+
+.primary-title {
+    font-weight: 600;
+}
+
+.primary-button {
+    border: 0 solid;
+}
+
+.primary-description {
+    font-size: 1em;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap&subset=latin-ext');
+
+html {
+    box-sizing: border-box;
+    font-family: $_font;
+    font-size: 14px;
+
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+        font-family: inherit;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+[role="button"] {
+    cursor: pointer;
+}
+
+figure {
+    line-height: 0;
+}
