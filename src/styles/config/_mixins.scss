@@ -10,13 +10,6 @@
     }
 }
 
-@mixin bacground($image, $size, $repeat, $position) {
-    background-image: $image;
-    background-size: $size;
-    background-repeat: $repeat;
-    background-position: $position;
-}
-
 @mixin hover {
     &:not([disabled]):hover {
         @content

@@ -1,0 +1,52 @@
+.i-primary-title {
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    color: $primary_black;
+    font-size: 1.2em;
+}
+
+.i-primary-text {
+    font-weight: 400;
+    color: $optional_blue;
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+.i-link {
+    // grid
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    color: $primary_green;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &-text {
+        padding-right: 10px;
+
+        transition: color 1.5s ease-in-out;
+    }
+
+    &-icon {
+        width: 12px;
+        height: 12px;
+
+        fill: $primary_green;
+
+        transition: fill 1.5s ease-in-out;
+    }
+
+    &:hover .i-link-text,
+    &:focus .i-link-text {
+        color: $primary_green_hover;
+    }
+
+    &:hover .i-link-icon,
+    &:focus .i-link-icon {
+        fill: $primary_green_hover
+    }
+
+}

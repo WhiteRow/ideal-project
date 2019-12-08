@@ -2,12 +2,14 @@
 
 html {
     box-sizing: border-box;
-    font-family: $_font;
+    font-family: $font;
     font-size: 14px;
 
     *,
     *:after,
-    *:before {
+    *:before,
+    button,
+    input {
         box-sizing: inherit;
         font-family: inherit;
     }
@@ -28,6 +30,7 @@ button {
     margin: 0;
     padding: 0;
 }
+
 
 button,
 [role="button"] {

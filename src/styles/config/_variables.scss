@@ -1,7 +1,7 @@
 /* 
     Fonts 
 */
-$_font: 'DM Sans';
+$font: 'DM Sans';
 
 /* 
     Layouts
@@ -12,3 +12,12 @@ $c_mw: 1140px;
 /* 
     Colors
 */
+$primary_black: #000;
+$primary_green: #207561;
+$optional_blue: #364d59;
+$outline_green: rgba(32, 116, 96, 0.5);
+
+/* 
+    Events
+*/
+$primary_green_hover: rgb(24, 87, 72);
