@@ -12,14 +12,13 @@ const extractFiles = require('./config/files.extract');
 
 const paths = {
 	source: path.join(__dirname, 'src'),
-	distribution: path.join(__dirname, 'public'),
+	distribution: path.join(__dirname, 'public')
 };
 
 const main = merge([
 	{
 		entry: {
-			'app': paths.source + '/js/app.js',
-			'home': paths.source + '/js/home.js',
+			home: paths.source + '/js/home.js'
 		},
 
 		output: {
@@ -37,9 +36,9 @@ const main = merge([
 			new HtmlWebpackPlugin({
 				filename: 'index.html',
 				template: paths.source + '/home.html',
-				chunks: ['common', 'app', 'home'],
+				chunks: ['common', 'home'],
 				favicon: paths.source + '/favicon.ico'
-			}),	
+			})
 		],
 
 		// optimization: {
@@ -56,9 +55,9 @@ const main = merge([
 		optimization: {
 			splitChunks: {
 				chunks: 'async',
-				name: true,
-			},
-		},
+				name: true
+			}
+		}
 	},
 
 	scripts(),

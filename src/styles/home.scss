@@ -1,3 +1,15 @@
 /* 
+    Config files
+*/
+@import './config/variables';
+@import './config/mixins';
+@import './config/base';
+@import './config/layout';
+
+/* 
     Components files
 */
+@import './components/typography';
+@import './components/buttons';
+@import './components/icons';
+@import './components/images';

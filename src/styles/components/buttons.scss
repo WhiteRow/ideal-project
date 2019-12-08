@@ -1,0 +1,26 @@
+.i-primary-button {
+    padding: 8px 30px;
+
+    background-color: $primary_green;
+    border: 1px solid $primary_green;
+
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4em;
+
+    transition: background-color 0.15s ease-in-out, outline 0.15s ease-in-out;
+
+    @include hover() {
+        background-color: $primary_green_hover;
+    }
+
+    @include focus() {
+        background-color: $primary_green_hover;
+        outline: 2px solid $outline_green;
+    }
+
+    @include active() {
+        outline: 2px solid $outline_green;
+    }
+
+}
