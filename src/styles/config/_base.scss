@@ -31,7 +31,6 @@ button {
     padding: 0;
 }
 
-
 button,
 [role="button"] {
     cursor: pointer;
@@ -39,4 +38,9 @@ button,
 
 figure {
     line-height: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
 }
