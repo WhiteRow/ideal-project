@@ -1,0 +1,63 @@
+.i-slider {
+    width: 100%;
+
+    // grid
+    display: flex;
+
+    overflow: hidden;
+    position: relative;
+
+    &-item {
+        flex: 0 0 100%;
+    }
+
+    &-controller {}
+
+    &-pagination {
+        width: 100%;
+
+        text-align: center;
+
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+
+        &-item {
+            width: 8px;
+            height: 8px;
+            margin: 0 2px;
+
+            display: inline-block;
+
+            background-color: #fff;
+            border-radius: 50%;
+
+            transition: background-color 0.15s ease-in-out, outline 0.15s ease-in-out;
+
+            @include focus() {
+                outline: 2px solid $outline_green;
+            }
+
+            // event
+            &.active {
+                background-color: $primary_green;
+            }
+
+            &:not(.active) {
+
+                @include hover() {
+                    background-color: $primary_green_hover;
+                }
+
+                @include focus() {
+                    background-color: $primary_green_hover;
+                    outline: 2px solid $outline_green;
+                }
+
+                @include active() {
+                    outline: 2px solid $outline_green;
+                }
+            }
+        }
+    }
+}

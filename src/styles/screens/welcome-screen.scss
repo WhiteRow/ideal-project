@@ -1,0 +1,46 @@
+.i-welcome-screen {
+    &-box {
+        padding: 250px 0;
+
+        text-align: center;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:nth-child(1) {
+            background-image: url('../images/main-screen-slide01.jpg');
+        }
+
+        &:nth-child(2) {
+            background-image: url('../images/main-screen-slide02.jpg');
+        }
+
+        &:nth-child(3) {
+            background-image: url('../images/main-screen-slide03.jpg');
+        }
+    }
+
+    &-title {
+        font-size: 3em;
+
+        &:not(.green) {
+            color: $optional_blue;
+        }
+
+        .green {
+            color: $primary_green;
+        }
+    }
+
+    &-text {
+        margin: 15px 0;
+
+        color: $optional_blue;
+        font-size: 1.2em;
+    }
+
+    .i-primary-button {
+        margin-top: 20px;
+    }
+}
