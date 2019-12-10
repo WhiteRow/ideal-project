@@ -7,10 +7,17 @@
 }
 
 .i-primary-text {
+    margin-bottom: 40px;
+
     font-weight: 400;
     color: $optional_blue;
     font-size: 1em;
     line-height: 1.7;
+}
+
+
+.text-break {
+    display: block;
 }
 
 .i-link {
@@ -19,7 +26,6 @@
     align-items: center;
 
     font-weight: 600;
-    color: $primary_green;
     font-size: 0.8em;
     text-transform: uppercase;
     text-decoration: none;
@@ -27,7 +33,9 @@
     &-text {
         padding-right: 10px;
 
-        transition: color 1.5s ease-in-out;
+        color: $primary_green;
+
+        transition: color 0.15s ease-in-out;
     }
 
     &-icon {
@@ -36,7 +44,7 @@
 
         fill: $primary_green;
 
-        transition: fill 1.5s ease-in-out;
+        transition: fill 0.15s ease-in-out;
     }
 
     &:hover .i-link-text,
