@@ -11,3 +11,9 @@ import '../../images/services-image01.jpg';
 import '../../images/services-image02.jpg';
 import '../../images/services-image03.jpg';
 import '../../images/services-image04.jpg';
+
+// blog images
+import '../../images/blog-image01.jpg';
+import '../../images/blog-image02.jpg';
+import '../../images/blog-image03.jpg';
+import '../../images/blog-image04.jpg';
