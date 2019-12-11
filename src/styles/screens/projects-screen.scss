@@ -1,0 +1,40 @@
+.projects-screen {
+    margin-top: 150px;
+
+    .i-col {
+        margin-bottom: 50px;
+
+        // grid 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .i-link {
+            margin: 0;
+        }
+    }
+
+    .i-slider-pagination {
+        bottom: 15%;
+    }
+
+    .i-project-about {
+        max-width: 630px;
+        margin: -100px auto 0 auto;
+        padding: 50px;
+
+        background-color: #fff;
+
+        position: relative;
+
+        .i-subtitle,
+        .i-optional-title {
+            margin-bottom: 10px;
+        }
+
+        .i-primary-text {
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+    }
+}
