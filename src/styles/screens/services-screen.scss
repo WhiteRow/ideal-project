@@ -44,22 +44,13 @@
                 }
             }
 
-            &-type {
+            .i-subtitle {
                 margin-bottom: 5px;
-
-                color: $optional_gray;
-                font-weight: 400;
-                font-size: 1.2em;
             }
 
-            &-title {
+            .i-optional-title {
                 margin-bottom: 50px;
-
-                color: $primary_black;
-                font-size: 2em;
-                text-transform: uppercase;
             }
-
         }
     }
 }
