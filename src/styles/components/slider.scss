@@ -41,11 +41,11 @@
             }
 
             // event
-            &.active {
+            &.is-active {
                 background-color: $primary_green;
             }
 
-            &:not(.active) {
+            &:not(.is-active) {
 
                 @include hover() {
                     background-color: $primary_green_hover;

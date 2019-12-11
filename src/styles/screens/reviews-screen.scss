@@ -1,0 +1,46 @@
+.reviews-screen {
+    margin-top: 150px;
+
+    .i-reviews {
+        &-item {
+            text-align: center;
+
+            &-quote {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 15px;
+
+                fill: $primary_green;
+            }
+
+            &-text {
+                max-width: 600px;
+                margin: 0 auto 20px auto;
+
+                color: $optional_blue;
+                font-weight: 400;
+                font-size: 1.6em;
+                line-height: 1.7;
+            }
+
+            &-author {
+                font-style: italic;
+                font-size: 1.1em;
+
+                &-name {
+                    color: $primary_black;
+                }
+
+                &-specialty {
+                    color: #6c757d;
+                }
+            }
+        }
+
+        .i-slider-pagination-item {
+            &:not(.is-active) {
+                background-color: #ccc;
+            }
+        }
+    }
+}
