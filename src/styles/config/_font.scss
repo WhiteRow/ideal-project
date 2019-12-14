@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap&subset=latin-ext');
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("/fonts/flaticon.woff") format("woff"),
+    url("/fonts/flaticon.woff2") format("woff2"),
+    url("/fonts/flaticon.ttf"),
+    url("/fonts/flaticon.svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-facebook:before {
+  content: "\f100";
+}
+
+.flaticon-twitter:before {
+  content: "\f101";
+}
+
+.flaticon-instagramm:before {
+  content: "\f102";
+}
+
+.flaticon-linkedin:before {
+  content: "\f103";
+}
+
+.flaticon-quote:before {
+  content: "\f104";
+}
+
+.flaticon-next:before {
+  content: "\f105";
+}

@@ -1,18 +1,20 @@
+const copyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = function() {
 	return {
 		module: {
 			rules: [
-				{
-					test: /\.(woff|woff2|ttf|otf|eot)$/,
-					use: [
-						{
-							loader: 'file-loader',
-							options: {
-								name: './fonts/[name].[ext]'
-							}
-						}
-					]
-				},
+				// {
+				// 	test: /\.(woff'|woff2'|eot'|ttf'|otf|svg)$/,
+				// 	use: [
+				// 		{
+				// 			loader: 'file-loader',
+				// 			options: {
+				// 				name: '[name].[ext]',
+				// 				outputPath: 'fonts/'
+				// 			}
+				// 		}
+				// 	]
+				// },
 				{
 					test: /\.(ico)$/,
 					use: [
@@ -25,6 +27,15 @@ module.exports = function() {
 					]
 				}
 			]
-		}
+		},
+
+		plugins: [
+			new copyWebpackPlugin([
+				{
+					from: 'src/fonts',
+					to: 'fonts/'
+				}
+			])
+		]
 	};
 };

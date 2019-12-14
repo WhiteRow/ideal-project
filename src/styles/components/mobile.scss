@@ -1,0 +1,25 @@
+.mobile {
+    &-menu {
+        &-button {
+            display: none;
+
+            padding: 10px;
+            background-color: rgba(109, 109, 109, 0.43);
+
+            &-line {
+                width: 25px;
+                height: 3px;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                background-color: #fff;
+            }
+
+            @include cmq(880px) {
+                display: block;
+            }
+        }
+    }
+}

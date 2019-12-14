@@ -1,5 +1,5 @@
 .blog-screen {
-    margin-top: 150px;
+    margin-top: 80px;
 
     .i-primary-text {
         max-width: 600px;
@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         &-item {
             flex: 0 0 23%;

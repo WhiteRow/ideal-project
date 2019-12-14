@@ -1,5 +1,5 @@
 .services-screen {
-    margin-top: 150px;
+    margin-top: 80px;
 
     .i-col {
         max-width: 450px;
@@ -12,6 +12,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include cmq(880px) {
+            margin-top: 30px;
+        }
+
 
         &-item {
             margin-bottom: 40px;

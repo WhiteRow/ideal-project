@@ -1,5 +1,5 @@
 .projects-screen {
-    margin-top: 150px;
+    margin-top: 80px;
 
     .i-col {
         margin-bottom: 50px;
@@ -12,10 +12,21 @@
         .i-link {
             margin: 0;
         }
+
+        @include cmq(880px) {
+            margin-bottom: 15px;
+        }
     }
 
     .i-slider-pagination {
         bottom: 15%;
+    }
+
+
+    .i-our-projects-image {
+        @include cmq(880px) {
+            max-height: 400px;
+        }
     }
 
     .i-project-about {
