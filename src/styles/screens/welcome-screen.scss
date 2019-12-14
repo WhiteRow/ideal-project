@@ -20,6 +20,10 @@
         &:nth-child(3) {
             background-image: url('../images/main-screen-slide03.jpg');
         }
+
+        @include cmq(880px) {
+            padding: 180px 0;
+        }
     }
 
     &-title {

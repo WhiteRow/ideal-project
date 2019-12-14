@@ -1,16 +1,15 @@
 .reviews-screen {
-    margin-top: 150px;
+    margin-top: 80px;
 
     .i-reviews {
         &-item {
             text-align: center;
 
             &-quote {
-                width: 20px;
-                height: 20px;
                 margin-bottom: 15px;
 
-                fill: $primary_green;
+                color: $primary_green;
+                font-size: 20px;
             }
 
             &-text {

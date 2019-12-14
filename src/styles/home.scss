@@ -1,6 +1,7 @@
 /* 
     Config files
 */
+@import './config/font';
 @import './config/variables';
 @import './config/mixins';
 @import './config/base';
@@ -9,12 +10,13 @@
 /* 
     Components files
 */
+@import './components/header';
 @import './components/typography';
 @import './components/buttons';
 @import './components/icons';
 @import './components/images';
-@import './components/header';
 @import './components/slider';
+@import './components/footer';
 
 /* 
     Screens files
@@ -25,6 +27,8 @@
 @import './screens/projects-screen';
 @import './screens/reviews-screen';
 @import './screens/blog-screen';
+
+@import './components/mobile';
 
 /* 
     Page styles
