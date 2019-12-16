@@ -13,6 +13,7 @@ html {
     }
 }
 
+
 body,
 h1,
 h2,
@@ -21,12 +22,21 @@ h4,
 h5,
 h6,
 p,
+span,
+a,
 figure,
+div,
+img,
 ul,
 li,
 button {
     margin: 0;
     padding: 0;
+
+    &::selection {
+        background-color: $primary_black;
+        color: #fff;
+    }
 }
 
 button,

@@ -20,6 +20,11 @@
                 font-weight: 400;
                 font-size: 1.6em;
                 line-height: 1.7;
+
+                @include cmq(400px) {
+                    padding: 0 10px;
+                    font-size: 1.3em;
+                }
             }
 
             &-author {
@@ -40,6 +45,10 @@
             &:not(.is-active) {
                 background-color: #ccc;
             }
+        }
+
+        @include cmq(400px) {
+            padding: 0;
         }
     }
 }

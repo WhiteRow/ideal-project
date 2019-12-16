@@ -9,6 +9,10 @@
 
     padding: 0 15px;
     margin: 0 auto;
+
+    @include cmq(780px) {
+        max-width: $c_mw_a;
+    }
 }
 
 .l-dots-background {

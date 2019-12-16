@@ -6,10 +6,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include cmq(780px) {
+            flex-direction: column;
+        }
     }
 
     .i-col {
         flex: 0 0 35%;
+
+        @include cmq(780px) {
+            flex: 0 0 100%;
+        }
+
+        &:first-child {
+            @include cmq(780px) {
+                margin-bottom: 50px;
+            }
+
+        }
     }
 
     .i-exp-block {

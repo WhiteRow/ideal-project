@@ -17,6 +17,10 @@
             margin-top: 30px;
         }
 
+        @include cmq(780px) {
+            flex-direction: column;
+        }
+
 
         &-item {
             margin-bottom: 40px;
