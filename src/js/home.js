@@ -10,7 +10,20 @@ import './config/images-import';
 import './config/fonts-import';
 
 /**
- * Modules files
+ * Components files
  */
+import FixedHeader from './components/fixed-header';
+import AdaptiveMenu from './components/adaptive-menu';
 
-console.log('Home file included');
+function Home() {
+	new AdaptiveMenu({
+		menu: '.i-header-menu',
+		button: '.mobile-menu-button',
+		menu_active_class: 'is-menu-visible',
+		button_active_class: 'is-adaptive-menu-active'
+	});
+
+	new FixedHeader();
+}
+
+document.addEventListener('DOMContentLoaded', Home());
