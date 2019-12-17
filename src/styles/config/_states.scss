@@ -1,0 +1,32 @@
+.l-header {
+
+    &.is-scrolled {
+        background-color: rgba(130, 130, 130, 0.3);
+
+        .l-container {
+            padding: 10px 50px;
+        }
+
+        @include cmq(880px) {
+            background-color: transparent;
+        }
+    }
+
+    .i-header-menu {
+        &.is-menu-visible {
+            display: block;
+        }
+    }
+}
+
+.mobile {
+    &-menu {
+        &-button {
+            &.is-adaptive-menu-active {
+                z-index: 4;
+                position: relative;
+            }
+
+        }
+    }
+}
