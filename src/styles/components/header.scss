@@ -103,7 +103,6 @@
         }
 
         @include cmq(880px) {
-            display: none;
             width: 100%;
             max-width: 300px;
             height: 100%;
@@ -112,12 +111,14 @@
 
             background-color: #fff;
 
+            transition: transform 0.3s ease-in-out;
+
+            transform: translateX(100%);
+
             position: fixed;
             right: 0;
             top: 0;
             z-index: 3;
-
-            transition: 0.2s ease-in-out;
         }
 
 

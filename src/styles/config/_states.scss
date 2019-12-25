@@ -13,8 +13,25 @@
     }
 
     .i-header-menu {
+        &.is-menu-hidden {
+            transform: translateX(100%);
+        }
+
         &.is-menu-visible {
-            display: block;
+            // @keyframes headerShow {
+            //     from {
+            //         transform: translateX(100%);
+            //     }
+
+            //     to {
+            //         transform: translateX(0%);
+            //     }
+            // }
+        
+            // animation-name: headerShow;
+            // animation-duration: 0.3s;
+
+            transform: translateX(0%);
         }
     }
 }
@@ -23,8 +40,29 @@
     &-menu {
         &-button {
             &.is-adaptive-menu-active {
-                z-index: 4;
+                background-color: transparent;
+
+                transform: translateX(-100%);
+
                 position: relative;
+                z-index: 4;
+
+                .mobile-menu-button-line {
+                    background-color: $primary_black;
+
+                    &:nth-child(1) {
+                        transform: translateX(7px);
+                    }
+
+                    &:nth-child(2) {
+                        transform: translateX(-3px);
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateX(3px);
+                    }
+                }
+                
             }
 
         }
