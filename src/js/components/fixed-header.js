@@ -1,7 +1,7 @@
 function FixedHeader(options) {
 	const Elements = {};
 
-	this._test = () => {
+	this._letsFix = () => {
 		const header = Elements.call.header;
 
 		if (pageYOffset > 100) {
@@ -12,7 +12,7 @@ function FixedHeader(options) {
 	};
 
 	this._init = () => {
-		window.addEventListener('scroll', this._test);
+		window.addEventListener('scroll', this._letsFix);
 	};
 
 	Elements.call = {
